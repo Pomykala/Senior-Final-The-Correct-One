@@ -7,7 +7,7 @@
 
 
 function PasswordMessage(m){
-  this.name="Password Message";
+  this.name="Password M3SS7GE";
   this.message=m;
 }
 
@@ -44,14 +44,14 @@ exports.checkLength = function(str){
 exports.containsUpper =function(str){
   let hasUpper = false;
     try{
-      for(let x = 0; x < str.length, x++){
-        if(inRange(str[x], 65, 90)==true){
+      for(let x=0; x<str.length,x++){
+        if(inRange(str[x],65,90)==true){
           hasUpper = true;
           throw new PasswordMessage("WHAT IS LIFE IN CAPITALS.");
         }
       }
       if(hasUpper = false){
-        throw new PasswordMessage("What are you doing with your life lowercase scum.");
+        throw new PasswordMessage("What are you doing with your life, its lowercase.");
     }
   }
 }
@@ -59,7 +59,23 @@ exports.containsUpper =function(str){
 
 
 exports.containsLower =function(str){
+let haslower=false
+try {
+  for(let x=0;x < str.length;x++){
+    if(inRange[x](str[x],97,122)==true){
+      hasLower=true
+      throw new PasswordMessage("Take The L")
+    }
+  }
+  if (hasUpper=false) {
+    throw new  PasswordMessage("No Uppercase letters bud")
+  }
 
+} catch (e) {
+
+} finally {
+
+}
 }
 
 
