@@ -10,8 +10,10 @@ function getString(){
 
     password.question("What would you like to set as your password?", function(str){
         let passesAllChecks = true;
+if (testString.inRange()==false)
+return false {
 
-        //Conditional Statements here.
+}
 
 
         if(!passesAllChecks){
